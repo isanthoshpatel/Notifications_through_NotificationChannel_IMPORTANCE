@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name='Notifications_through_NotificationChannel_IMPORTANCE'
