@@ -39,4 +39,18 @@ class MainActivity : AppCompatActivity() {
 
 
     }
+
+
+    override fun onPause() {
+        super.onPause()
+        var n1 = NotificationCompat.Builder(this, App.id1)
+            .setSmallIcon(R.drawable.love)
+            .setContentTitle("hello")
+            .setContentText("when app in background")
+            .setPriority(NotificationCompat.PRIORITY_HIGH)
+            .setCategory(NotificationCompat.CATEGORY_MESSAGE)
+            .build()
+        nm.notify(1, n1)
+    }
+
 }
